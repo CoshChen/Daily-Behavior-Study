@@ -30,3 +30,16 @@ There are three raw SPSS datasets: *data_1_Baseline* (baseline information of st
   Obtain: *Final_study_1_study_2_Merged*
   
 ## Part 2: Python Scripts
+The SPSS file *Final_study_1_study_2_Merged* from Part 1 is exported as a csv file.
+
+### ProcessDailyData.py
+This script does the following things for the input file *Final_study_1_study_2_Merged* and saves the result to *Final_Study_1_Study_2_Merged_processed*.
+
+  * Drop subjects that have not enough number of days (D=11).
+  * Replace missing values (999) by the lowest value (0 or 1).
+  * Calculate scores of depression (DASS_dep), anxiety (DASS_anx), and stress (DASS_strs) from DASS1-21 columns.
+  * Calculate CAMS score from CAMS1-12 columns.
+  * Calculate scores of positive affect (PA) and negative affect (NA) from PANAS1-20 columns.
+  * Assign color in (R,G,B) to each subject for visualization. Here is an example of daily dynamics of variables.
+  
+    ![](https://github.com/CoshChen/Daily-Behavior-Study/blob/master/DailyDynamics.gif)
