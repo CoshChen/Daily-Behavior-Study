@@ -46,3 +46,9 @@ The SPSS file *Final_study_1_study_2_Merged* from Part 1 is exported as a csv fi
     
 * ### DataLoader.py
   This script lodes a csv file and save the dataset in numpy arrays. The index=0 along the time direction corresponds to the latest record.
+  
+ 
+ # Functions to Build Models
+ 
+ * QIF_Tensorflow.py: tensorQIF function and a regularizer. 
+ * Utils.py: Functions to make matrix inputs and the feature reduction.
