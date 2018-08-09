@@ -63,6 +63,7 @@ def full_layer(input_layer, output_size, bias=True, layer_name=None):
 def group_reduce(input_list, layer_size_list, bias=True, act=None, layer_name=None):
     """
     @ param input_list: a list of feature groups each has dim [batch, T, d1]
+    @ param layer_size_list: a list of list of integers. It should have the same length as the input_list
     @ return: tf.tensor [batch, T,  sum(output_size orver all group)]
     """
     if len(input_list) != len(layer_size_list):
